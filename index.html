@@ -15,8 +15,8 @@
                 <h1 class="anim2">between dream</h1>
                 <h1 class="anim2">and reality</h1>
             </div>
-            <p class="anim1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio at ipsa alias modi natus excepturi?</p>
-            <a href="#" class="anim1" id="cta">Start Dreaming</a>
+            <p class="anim1" style="font-style: italic;">The possibilities are unlimited with GSAP! (though it seems GSAP may not like react, oh well..)</p>
+            <a href="#" class="anim1" id="cta">Reverse!</a>
         </div>
     </main>
     <aside>
@@ -27,14 +27,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 
-    <script>
-        let tl = gsap.timeline({defaults:{duration: 1}})
-
-        tl.from('.anim1', {y: -50, stagger: 0.6, opacity:0})
-            .from('aside', {backgroundPosition: '200px 0px', opacity:0}, '-=1.5')
-            .from('img', {y: 30, opacity:0}, '-=.5')
-    </script>
-
-    <script src="index.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
